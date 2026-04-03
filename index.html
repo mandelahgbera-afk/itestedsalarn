@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5" />
+    <title>Salarn — Professional Crypto Copy-Trading &amp; Investment Platform</title>
+    <meta name="description" content="Salarn is the leading crypto copy-trading platform. Mirror top-performing traders automatically, manage your portfolio, and grow your wealth with 120+ cryptocurrencies. Previously known as Vested." />
+    <meta name="keywords" content="crypto trading, copy trading, cryptocurrency investment, bitcoin trading, ethereum, crypto portfolio, DeFi, Salarn, copy trading platform, crypto investment" />
+    <meta name="author" content="Salarn" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#22c55e" />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://salarn.app" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://salarn.app/" />
+    <meta property="og:title" content="Salarn — Professional Crypto Copy-Trading Platform" />
+    <meta property="og:description" content="Copy top traders automatically. Manage your crypto portfolio in real time. Join 48,000+ traders growing their wealth with Salarn." />
+    <meta property="og:image" content="https://salarn.app/opengraph.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Salarn" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@salarnapp" />
+    <meta name="twitter:creator" content="@salarnapp" />
+    <meta name="twitter:title" content="Salarn — Crypto Copy-Trading Platform" />
+    <meta name="twitter:description" content="Mirror top-performing traders automatically. 120+ cryptos. Bank-level security. Join Salarn today." />
+    <meta name="twitter:image" content="https://salarn.app/opengraph.jpg" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
+
+    <!-- DNS Prefetch & Preconnect for performance -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Supabase preconnect: injected at runtime to avoid build-time placeholder warnings -->
+    <script>
+      (function() {
+        var u = typeof __VITE_SUPABASE_URL__ !== 'undefined' ? __VITE_SUPABASE_URL__ : '';
+        if (!u) {
+          try { u = new URL(document.currentScript.src).origin; } catch(e) {}
+        }
+        // The real URL comes from the app's env vars at build time or from the meta tag below
+        var m = document.querySelector('meta[name="x-supabase-url"]');
+        if (m) u = m.content;
+        if (u && u.startsWith('https://') && !u.includes('localhost')) {
+          var dns = document.createElement('link');
+          dns.rel = 'dns-prefetch';
+          dns.href = u;
+          document.head.appendChild(dns);
+          var pre = document.createElement('link');
+          pre.rel = 'preconnect';
+          pre.href = u;
+          document.head.appendChild(pre);
+        }
+      })();
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,300;0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;0,14..32,900;1,14..32,400&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Structured data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FinancialService",
+      "name": "Salarn",
+      "alternateName": "Salarn (formerly Vested)",
+      "description": "Professional crypto copy-trading and investment platform. Mirror top traders automatically, manage 120+ cryptocurrencies, and grow your wealth.",
+      "url": "https://salarn.app",
+      "logo": "https://salarn.app/favicon.svg",
+      "image": "https://salarn.app/opengraph.jpg",
+      "serviceType": "Cryptocurrency Copy-Trading Platform",
+      "areaServed": "Worldwide",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Salarn Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Copy Trading" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Crypto Portfolio Management" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cryptocurrency Exchange" } }
+        ]
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
