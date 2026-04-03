@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salarn Withdrawal OTP Code</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0d1117; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #e6edf3; }
+    .wrapper { max-width: 600px; margin: 0 auto; padding: 40px 20px; }
+    .logo-row { display: flex; align-items: center; gap: 12px; margin-bottom: 40px; }
+    .logo-icon { width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #22c55e, #16a34a); display: flex; align-items: center; justify-content: center; }
+    .logo-name { font-size: 22px; font-weight: 900; color: #e6edf3; letter-spacing: -0.5px; }
+    .card { background: #161b22; border: 1px solid #30363d; border-radius: 20px; padding: 40px; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: #f59e0b18; border: 1px solid #f59e0b30; border-radius: 100px; padding: 4px 12px; margin-bottom: 24px; }
+    .badge-dot { width: 6px; height: 6px; border-radius: 50%; background: #f59e0b; }
+    .badge-text { font-size: 11px; font-weight: 600; color: #f59e0b; text-transform: uppercase; letter-spacing: 0.5px; }
+    h1 { font-size: 28px; font-weight: 800; color: #e6edf3; margin-bottom: 12px; line-height: 1.2; }
+    .subtitle { font-size: 15px; color: #8b949e; line-height: 1.6; margin-bottom: 32px; }
+    .otp-box { background: #0d1117; border: 2px solid #22c55e40; border-radius: 16px; padding: 28px; text-align: center; margin: 24px 0; }
+    .otp-label { font-size: 12px; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; }
+    .otp-code { font-size: 48px; font-weight: 900; letter-spacing: 10px; color: #22c55e; font-family: 'Courier New', monospace; }
+    .otp-expires { font-size: 12px; color: #8b949e; margin-top: 12px; }
+    .otp-expires strong { color: #f59e0b; }
+    .divider { border: none; border-top: 1px solid #21262d; margin: 28px 0; }
+    .footer { margin-top: 32px; text-align: center; font-size: 12px; color: #484f58; line-height: 1.6; }
+    .footer a { color: #8b949e; text-decoration: none; }
+    .security-note { background: #1c2128; border: 1px solid #ef444430; border-radius: 10px; padding: 16px; margin-top: 20px; font-size: 13px; color: #8b949e; }
+    .security-note strong { color: #ef4444; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="logo-row">
+      <div class="logo-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+          <polyline points="16 7 22 7 22 13"/>
+        </svg>
+      </div>
+      <span class="logo-name">Salarn</span>
+    </div>
+
+    <div class="card">
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span class="badge-text">Withdrawal OTP</span>
+      </div>
+
+      <h1>Your withdrawal OTP code</h1>
+      <p class="subtitle">
+        An admin has generated a one-time password to authorize your withdrawal request on Salarn. Enter this code on the platform to complete your withdrawal.
+      </p>
+
+      <div class="otp-box">
+        <p class="otp-label">One-Time Password</p>
+        <p class="otp-code">{{OTP_CODE}}</p>
+        <p class="otp-expires">Expires in <strong>15 minutes</strong></p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="security-note">
+        <strong>Never share this code.</strong> Salarn staff will never ask for your OTP via chat, phone, or email. If someone is asking for your code, it is a scam — contact support immediately at <a href="mailto:support@salarn.com" style="color: #8b949e;">support@salarn.com</a>.
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2025 Salarn. All rights reserved.</p>
+      <p style="margin-top: 6px;">
+        <a href="https://salarn.app">Platform</a> &nbsp;&bull;&nbsp;
+        <a href="mailto:support@salarn.com">Support</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
